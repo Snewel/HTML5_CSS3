@@ -1,0 +1,272 @@
+ @font-face {
+    font-family: 'montserrat';
+    src: url('../fonts/montserrat/montserrat-regular.woff2'),
+         url('../fonts/montserrat/montserrat-regular.woff'),
+         url('../fonts/montserrat/montserrat-regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+ @font-face {
+    font-family: 'montserrat-extralight';
+    src: url('../fonts/montserrat/montserrat-extralight.woff2'),
+         url('../fonts/montserrat/montserrat-extralight.woff'),
+         url('../fonts/montserrat/montserrat-extralight.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'raleway-extrabold';
+    src: url('../fonts/raleway/raleway-extrabold.woff2'),
+         url('../fonts/raleway/raleway-extrabold.woff'),
+         url('../fonts/raleway/raleway-extrabold.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'raleway';
+    src: url('../fonts/raleway/raleway-regular.woff2'),
+         url('../fonts/raleway/raleway-regular.woff'),
+         url('../fonts/raleway/raleway-regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'raleway-semibold';
+    src: url('../fonts/raleway/raleway-semibold.woff2'),
+         url('../fonts/raleway/raleway-semibold.woff'),
+         url('../fonts/raleway/raleway-semibold.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    margin: 0;
+}
+
+.container {
+    width: 1920px;
+    margin: 0 auto;
+    box-sizing: border-box;
+/*    border: 1px solid black;*/
+}
+
+.header {
+    width: 100%;
+    min-height: 1024px;
+    background-image: url(../img/background-header.jpg);
+    background-repeat: no-repeat;
+/*    box-sizing: border-box;*/
+/*    border: 1px solid green;*/
+}
+
+.header-wrap {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+}
+
+.logo {
+    fill: #fff;
+    text-decoration: none;
+    color: #ffffff;
+    font-family: 'raleway', 'Arial';
+    font-size: 34px;
+    font-weight: 400;
+    letter-spacing: -1.36px;
+    margin: 40px 0 0 0 ;
+}
+
+.logo:hover {
+    fill: black;
+    color: black;
+}
+
+.logo:active {
+    fill: #fff;
+    color: #fff;
+}
+
+.logo-title {
+    text-transform: capitalize;
+}
+
+.header-menu {
+    display: inline-block;
+    margin: 0 0 0 220px;
+}
+
+.header-menu-link {
+    text-decoration: none;
+    color: #ffffff;
+    font-family: 'montserrat';
+    font-size: 14px;
+    font-weight: 300;
+    margin: 0 0 0 30px;
+}
+
+.header-menu-link:hover {
+    color: #c7b299;
+}
+
+.header-menu-link:active {
+    color: #ffffff;
+}
+
+.header-menu-link:nth-child(8) {
+    margin: 0 65px 0 30px;
+}
+
+.header-icon{
+    margin: 0 0 0 30px;
+    fill: #fff;
+}
+
+.header-search {
+    
+}
+
+.header-wrap1 {
+    width: 100%;
+    display: flex;
+    flex-flow: wrap;
+    margin: 0 auto;
+    text-align: center;
+    margin: 280px 0 0 0;
+    position: relative;
+}
+
+.header-title {
+    width: 100%;
+    color: #ffffff;
+    font-family: 'raleway';
+    font-size: 36px;
+    font-weight: 500;
+}
+
+.header-title1 {
+    width: 100%;
+    color: #ffffff;
+    font-family: 'raleway-extrabold';
+    font-size: 52px;
+    font-weight: 400;
+    margin: 15px 0 0 0;
+}
+
+.header-txt {
+    width: 100%;
+    color: #ffffff;
+    font-family: 'montserrat';
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 24px;
+    margin: 19px 0 52px 0;
+}
+
+.header-btn {
+    width: 170px;
+    height: 53px;
+    color: #ffffff;
+    font-family: 'raleway-extrabold';
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 23px;
+    text-transform: uppercase;
+    box-shadow: inset 0 -3px 0 #736357;
+    border: none;
+    border-radius: 3px;
+    background-color: #998675;
+    outline: none;
+    margin: 0 auto;
+}
+
+.header-btn:hover {
+    outline: none;
+    background-color: #111111;
+}
+
+.header-btn:active {
+    outline: none;
+    background-color: #998675;
+}
+
+.lefth-icon {
+    display: block;
+    width: 40px;
+    height: 73px;
+    background-image: url(../img/left.png); 
+    position: absolute;
+    top: 100px;
+    left: 150px;
+}
+
+.right-icon {
+    display: block;
+    width: 40px;
+    height: 73px;
+    position: absolute;
+    background-image: url(../img/right.png); 
+    top: 100px;
+    right: 150px;
+}
+
+.pagination {
+  width: 120px;
+  display: flex;
+  justify-content: center;
+  margin: 329px auto 0;
+}
+
+.pagination-link {
+  display: block;
+  width: 10px;
+  min-height: 10px;
+  margin: 5px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  border: 2px solid transparent;
+  opacity: 0.5;
+}
+
+.pagination-link:hover {
+  border: 2px solid #d3c1ad;
+  background-color: transparent;
+  transform: scale(1.2);
+}
+
+.settings {
+    width: 100%;
+    min-height: 1080px;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center; 
+    margin: 80px 0 0 0;
+}
+
+.settings-block {
+    width: 300px;
+    min-height: 200px;
+    text-align: center;
+}
+
+.settings-block-title {
+    color: #555555;
+    font-family: 'raleway-semibold';
+    font-size: 22px;
+    font-weight: 400;
+}
+
+.settings-block-txt {
+    min-height: 62px;
+    color: #8c8c8c;
+    font-family: 'montserrat';
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 24px;
+}
+
+
